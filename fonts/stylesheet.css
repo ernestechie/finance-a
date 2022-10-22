@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Medium-Italic.eot');
+  src: local('Moderat Medium Italic'), local('Moderat-Medium-Italic'),
+    url('Moderat-Medium-Italic.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Medium-Italic.woff2') format('woff2'),
+    /* url('Moderat-Medium-Italic.woff') format('woff'), */
+      url('Moderat-Medium-Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Black-Italic.eot');
+  src: local('Moderat Black Italic'), local('Moderat-Black-Italic'),
+    url('Moderat-Black-Italic.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Black-Italic.woff2') format('woff2'),
+    url('Moderat-Black-Italic.woff') format('woff'),
+    url('Moderat-Black-Italic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Bold.eot');
+  src: local('Moderat Bold'), local('Moderat-Bold'),
+    url('Moderat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Bold.woff2') format('woff2'),
+    url('Moderat-Bold.woff') format('woff'),
+    url('Moderat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Regular.eot');
+  src: local('Moderat Regular'), local('Moderat-Regular'),
+    url('Moderat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Regular.woff2') format('woff2'),
+    url('Moderat-Regular.woff') format('woff'),
+    url('Moderat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Thin.eot');
+  src: local('Moderat Thin'), local('Moderat-Thin'),
+    url('Moderat-Thin.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Thin.woff2') format('woff2'),
+    url('Moderat-Thin.woff') format('woff'),
+    url('Moderat-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Thin-Italic.eot');
+  src: local('Moderat Thin Italic'), local('Moderat-Thin-Italic'),
+    url('Moderat-Thin-Italic.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Thin-Italic.woff2') format('woff2'),
+    url('Moderat-Thin-Italic.woff') format('woff'),
+    url('Moderat-Thin-Italic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Bold-Italic.eot');
+  src: local('Moderat Bold Italic'), local('Moderat-Bold-Italic'),
+    url('Moderat-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Bold-Italic.woff2') format('woff2'),
+    url('Moderat-Bold-Italic.woff') format('woff'),
+    url('Moderat-Bold-Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Medium.eot');
+  src: local('Moderat Medium'), local('Moderat-Medium'),
+    url('Moderat-Medium.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Medium.woff2') format('woff2'),
+    /* url('Moderat-Medium.woff') format('woff'), */ url('Moderat-Medium.ttf')
+      format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Light-Italic.eot');
+  src: local('Moderat Light Italic'), local('Moderat-Light-Italic'),
+    url('Moderat-Light-Italic.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Light-Italic.woff2') format('woff2'),
+    /* url('Moderat-Light-Italic.woff') format('woff'), */
+      url('Moderat-Light-Italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Black.eot');
+  src: local('Moderat Black'), local('Moderat-Black'),
+    url('Moderat-Black.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Black.woff2') format('woff2'),
+    url('Moderat-Black.woff') format('woff'),
+    url('Moderat-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Regular-Italic.eot');
+  src: local('Moderat Regular Italic'), local('Moderat-Regular-Italic'),
+    url('Moderat-Regular-Italic.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Regular-Italic.woff2') format('woff2'),
+    url('Moderat-Regular-Italic.woff') format('woff'),
+    url('Moderat-Regular-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src: url('Moderat-Light.eot');
+  src: local('Moderat Light'), local('Moderat-Light'),
+    url('Moderat-Light.eot?#iefix') format('embedded-opentype'),
+    url('Moderat-Light.woff2') format('woff2'),
+    /* url('Moderat-Light.woff') format('woff'), */ url('Moderat-Light.ttf')
+      format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

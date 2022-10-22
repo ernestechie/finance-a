@@ -1,0 +1,77 @@
+/* ? */
+@import url('../fonts/stylesheet.css');
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Moderat' sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply font-moderat;
+  }
+
+  .nav {
+    @apply w-full py-4 px-4 flex items-center justify-between fixed top-0 left-0 z-10 md:py-6 md:px-12 lg:px-16 duration-700;
+  }
+
+  .nav .nav-logo {
+    @apply text-2xl;
+  }
+
+  .nav .mobile-sidebar {
+    @apply flex flex-col justify-around duration-500 absolute top-0 h-screen bg-gray-800 py-8 px-12 lg:justify-between lg:p-0 lg:bg-transparent lg:relative lg:h-auto lg:w-[80%] lg:flex-row;
+  }
+
+  .nav-links {
+    @apply flex flex-col justify-between h-1/2 lg:h-auto lg:w-1/2 lg:flex-row lg:mx-auto lg:justify-between;
+  }
+
+  .nav-links li a {
+    @apply font-medium text-white uppercase hover:text-purple-500 duration-300 lg:hover:text-purple-600 lg:text-gray-700 text-sm p-2;
+  }
+
+  .nav .nav-buttons {
+    @apply flex flex-col lg:block;
+  }
+
+  .nav-link-active {
+    @apply border-b-2 border-purple-500 duration-500 text-purple-500 lg:text-purple-500;
+  }
+
+  .nav .nav-buttons a {
+    @apply my-2 text-center lg:mx-2;
+  }
+
+  .btn {
+    @apply py-3 px-8 rounded-lg font-medium duration-500;
+  }
+
+  .btn-transparent {
+    @apply text-gray-800 hover:text-purple-500 lg:hover:bg-gray-200 lg:hover:text-gray-700;
+  }
+
+  .btn-primary {
+    @apply bg-purple-500 text-white hover:bg-purple-700;
+  }
+}
+
+.sidebar-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
