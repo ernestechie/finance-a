@@ -32,7 +32,7 @@ a {
   }
 
   .nav .nav-logo {
-    @apply text-2xl;
+    @apply text-2xl text-white font-semibold;
   }
 
   .nav .mobile-sidebar {
@@ -44,7 +44,7 @@ a {
   }
 
   .nav-links li a {
-    @apply font-medium text-white uppercase hover:text-purple-500 duration-300 lg:hover:text-purple-600 lg:text-gray-700 text-sm p-2;
+    @apply font-medium text-white uppercase hover:text-purple-500 duration-300 lg:hover:text-purple-600 text-sm p-2;
   }
 
   .nav .nav-buttons {
@@ -64,14 +64,31 @@ a {
   }
 
   .btn-transparent {
-    @apply text-gray-800 hover:text-purple-500 lg:hover:bg-gray-200 lg:hover:text-gray-700;
+    @apply text-white hover:text-purple-500;
   }
 
   .btn-primary {
     @apply bg-purple-500 text-white hover:bg-purple-700;
   }
+
+  .card {
+    @apply rounded-md shadow-lg hover:shadow-2xl duration-500 p-8;
+  }
 }
 
 .sidebar-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  transition: 0.4s ease;
+}
+
+.zoom {
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s ease-in;
+}
+
+.zoom:hover .child {
+  transform: scale(1.1);
+  transition: 0.4s ease-out;
 }

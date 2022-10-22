@@ -14,20 +14,18 @@ const Navbar = () => {
     window.addEventListener('scroll', () => {
       setScroll(window.scrollY);
     });
-  }, []);
+  }, [scroll]);
 
   return (
     <>
-      <nav className={`nav ${scroll > 50 ? 'bg-red-600' : 'bg-transparent'}`}>
+      <nav className={`nav ${scroll > 50 ? 'bg-gray-900' : 'bg-transparent'}`}>
         <Link href='/' passHref>
           <a className='nav-logo'>Finance-A</a>
         </Link>
 
         <button
           type='button'
-          className={`text-3xl lg:hidden duration-300 z-10 ${
-            showNav ? 'text-gray-100' : 'text-gray-700'
-          }`}
+          className={`text-3xl lg:hidden duration-300 z-10 text-white`}
           onClick={toggleNav}
         >
           <CgMenuRightAlt />
@@ -83,10 +81,7 @@ const Navbar = () => {
 
           <div className='nav-buttons'>
             <Link href='/login' passHref>
-              <a
-                className='btn btn-transparent text-white lg:text-gray-700'
-                onClick={toggleNav}
-              >
+              <a className='btn btn-transparent' onClick={toggleNav}>
                 Login
               </a>
             </Link>
