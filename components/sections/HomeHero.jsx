@@ -1,13 +1,16 @@
 import Aos from 'aos';
 import React, { useEffect } from 'react';
+import HeroCardsData from '../../static/HeroCardsData';
 
-const Hero = () => {
+const HomeHero = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
 
+  //  mb-[768px] md:mb-[160px] lg:mb-[200px] xl:mb-[140px]
+
   return (
-    <header className='header w-full h-screen p-8 py-24 lg:px-16 mb-[900px] md:mb-[500px] lg:mb-[200px] xl:mb-[140px]'>
+    <header className='header w-full p-8 py-24 lg:px-16'>
       <div className='py-16 grid grid-cols-1 lg:grid-cols-2 '>
         <div className='content text-white'>
           <h1 className='mb-6 text-3xl font-bold uppercase'>
@@ -25,14 +28,18 @@ const Hero = () => {
       </div>
 
       {/* ? WHAT WE DO */}
-      <div className='absolute bottom-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto w-full max-w-[1024px]'>
-        {['box-1', 'box-2', 'box-3'].map((box, index) => (
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto w-full max-w-[1024px]'>
+        {HeroCardsData.map((card, index) => (
           <div
-            key={`${index + 1}-${box}`}
-            className='card bg-gray-50 border-[2px] hover:border-purple-500 h-[300px]'
+            key={`${index + 1}-${card.heading}`}
+            className='card bg-white border-[2px] text-center hover:border-purple-500 h-[300px] p-6'
             data-aos='fade-right'
           >
-            BOX
+            <p className='text-purple-600 text-5xl flex items-center mx-auto justify-center mb-4 p-4 bg-purple-100 h-20 w-20 rounded-full'>
+              {card.icon}
+            </p>
+            <p className='font-bold text-2xl mb-3'>{card.heading}</p>
+            <p className='text-lg'>{card.description}</p>
           </div>
         ))}
       </div>
@@ -63,4 +70,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomeHero;

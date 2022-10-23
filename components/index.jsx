@@ -1,5 +1,11 @@
+export { default as FaqItem } from './FaqItem';
 export { default as Footer } from './Footer';
-export { default as Hero } from './Hero';
 export { default as Layout } from './Layout';
 export { default as Meta } from './Meta';
 export { default as Navbar } from './Navbar';
+export { default as HomeFaq } from './sections/HomeFaq';
+export { default as HomeHero } from './sections/HomeHero';
+export { default as HomeJoinUs } from './sections/HomeJoinUs';
+export { default as HomeObjectives } from './sections/HomeObjectives';
+export { default as HomeWhatWeDo } from './sections/HomeWhatWeDo';
+export { default as HomeWorkEthics } from './sections/HomeWorkEthics';

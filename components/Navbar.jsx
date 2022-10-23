@@ -20,7 +20,7 @@ const Navbar = () => {
     <>
       <nav className={`nav ${scroll > 50 ? 'bg-gray-900' : 'bg-transparent'}`}>
         <Link href='/' passHref>
-          <a className='nav-logo'>Finance-A</a>
+          <a className='nav-logo'>FAI.</a>
         </Link>
 
         <button
@@ -40,7 +40,7 @@ const Navbar = () => {
             <li>
               <Link href='/' passHref>
                 <a
-                  className={path === '/' && 'nav-link-active'}
+                  className={path === '/' ? 'nav-link-active' : '_'}
                   onClick={toggleNav}
                 >
                   Home
@@ -50,7 +50,7 @@ const Navbar = () => {
             <li>
               <Link href='/about' passHref>
                 <a
-                  className={path === '/about' && 'nav-link-active'}
+                  className={path === '/about' ? 'nav-link-active' : '_'}
                   onClick={toggleNav}
                 >
                   About
@@ -60,7 +60,7 @@ const Navbar = () => {
             <li>
               <Link href='/services' passHref>
                 <a
-                  className={path === '/services' && 'nav-link-active'}
+                  className={path === '/services' ? 'nav-link-active' : '_'}
                   onClick={toggleNav}
                 >
                   Services
@@ -70,7 +70,7 @@ const Navbar = () => {
             <li>
               <Link href='/contact' passHref>
                 <a
-                  className={path === '/contact' && 'nav-link-active'}
+                  className={path === '/contact' ? 'nav-link-active' : '_'}
                   onClick={toggleNav}
                 >
                   Contact
