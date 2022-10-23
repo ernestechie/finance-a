@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import React from 'react';
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
@@ -13,7 +13,7 @@ const HomeJoinUs = () => {
           We offer services you may not get anywhere else.
         </p>
         <Link href='/register' passHref>
-          <a href='#' className='btn btn-primary uppercase' data-aos='flip-up'>
+          <a className='btn btn-primary uppercase' data-aos='flip-up'>
             Register today
           </a>
         </Link>
